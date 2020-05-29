@@ -1,0 +1,59 @@
+form, div, button, input{
+    box-shadow: 2.5px 2.5px #00000077;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+form{
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: lightgreen;
+}
+form > button{
+    width: 95%;
+    padding: 10px;
+    margin: 7.5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(105, 177, 105);
+    outline: none;
+}
+form > button:active{
+    box-shadow: -2.5px -2.5px #00000077;
+}
+
+form > input{
+    width: 45%;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.mensagens{
+    margin: 10px;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 7.5px;
+    border: 2px solid rgb(164, 194, 164);
+    width: 400px;
+    max-height: 60%;
+    overflow-y: auto;
+}
+.mensagens > h1{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+.mensagens > p{
+    margin: 5px;
+}
