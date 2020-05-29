@@ -18,13 +18,6 @@ app.use('/', (req, res) => {
 
 io.on('connection', socket => {
     console.log(`Socket conectado: ${socket.id}`);
-
-    socket.emit("mensagensAnteriores", mensagens);
-
-    socket.on('enviarMensagem', data => {
-        mensagens.push(data);
-        socket.broadcast.emit('mensagemRecebida', data);
-    });
 });
 
 server.listen(3000);
