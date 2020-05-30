@@ -1,14 +1,77 @@
-form, div, button, input{
-    box-shadow: 2.5px 2.5px #00000077;
-}
-
 body{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0;
     position: absolute;
     width: 100vw;
     height: 100vh;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 5px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+#usuariosContainer{
+    width: 25vw;
+    background-color: green;
+}
+
+#contentContainer{
+    background-color: rgb(215, 255, 154);
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+}
+#mensagensContainer{
+    height: 90vh;
+    margin: 4vh;
+    height: 82vh;
+    background-color: indigo;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+#mensagemContainer{
+    height: 10vh;
+    background-color: indianred;
+    display: flex;
+}
+#mensagemContainer > input, #mensagemContainer > button{
+    margin: 12.5px;
+}
+#mensagemContainer > input{
+    flex: 1;
+}
+
+#mensagens{
+    overflow-y: scroll;
+    flex: 1;
+}
+h1{
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+}
+
+.mensagem{
+    background-color: khaki;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 25px;
+}
+.mensagem .msg{
+    display: flex;
+    align-items: center;
+}
+.mensagem h3{
+    margin-right: 15px;
+}
+.mensagem h5{
+    text-align: center;
+}
+
+.autor{
+    background-color: lawngreen !important;
 }

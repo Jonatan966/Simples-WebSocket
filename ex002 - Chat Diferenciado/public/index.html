@@ -7,7 +7,25 @@
     <title>Testes com o WebSocket</title>
 </head>
 <body>
+    <div id="usuariosContainer">
+        <h1>Usuários Conectados</h1>
+        <div id="listaUsuarios">
+
+        </div>
+    </div>
     
+    <div id="contentContainer">
+        <div id="mensagensContainer">
+            <h1>Mensagens</h1>
+            <div id="mensagens">
+            </div>
+        </div>
+        <form id="mensagemContainer">
+            <input id="autor" placeholder="Seu nome" type="text">
+            <input id="mensagem" placeholder="Sua mensagem" type="text">
+            <button>Enviar</button>
+        </form>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
