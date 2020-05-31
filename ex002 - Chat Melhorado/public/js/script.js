@@ -1,4 +1,4 @@
-var socket = io('http://localhost:3000');
+var socket = io('http://26.26.81.16:3000');
 
 function loadUsuario(usr) {
     console.log(socket.id);
